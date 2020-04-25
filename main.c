@@ -16,6 +16,7 @@
 #include <string.h>
 #define SOUBOR "zavodnici.txt"
 #define ODDELOVAC " \n"
+#define VYSTUP "listina.txt"
 /*
  * 
  */
@@ -91,6 +92,25 @@ int main(int argc, char** argv) {
         printf("%d %15s %10s %12s %10s\n",zavodnici[i].cislo,zavodnici[i].prijmeni,zavodnici[i].jmeno,zavodnici[i].cas1,zavodnici[i].cas2);
     }
     
+    if((pFile = fopen(VYSTUP,"w"))==NULL){
+        printf("Soubor %s nebyl otevren",VYSTUP);
+        return EXIT_FAILURE;
+    }
+    
+    fprintf(pFile,"VYSLEDKOVA LISTINA");
+    fprintf(pFile,"----------------------------------------------------------------------------------------\n");
+    fprintf(pFile,"cislo  |  prijmeni  |   jmeno   |  cas-1  |  cas-2  |   celkem   |\n");
+    fprintf(pFile,"----------------------------------------------------------------------------------------\n");
+    for(i=0;i<pocet;i++){
+       // casCelkem += zavodnici[i].cas1+zavodnici[i].cas2;
+        fprintf(pFile,"%d %15s %10s %12s %10s\n",zavodnici[i].cislo,zavodnici[i].prijmeni,zavodnici[i].jmeno,zavodnici[i].cas1,zavodnici[i].cas2);
+    }
+    
+    if(fclose(pFile)==EOF){
+        printf("Nebyl zavren vas soubor %s\n",VYSTUP);
+    }else{
+        printf("Byl vytvoren soubor %s.\n",VYSTUP);
+    }
     return (EXIT_SUCCESS);
 }
 

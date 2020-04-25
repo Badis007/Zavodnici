@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=MinGW-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/MinGW-Windows
-CND_ARTIFACT_NAME_Debug=zavodnici
-CND_ARTIFACT_PATH_Debug=dist/Debug/MinGW-Windows/zavodnici
+CND_ARTIFACT_NAME_Debug=zavod
+CND_ARTIFACT_PATH_Debug=dist/Debug/MinGW-Windows/zavod
 CND_PACKAGE_DIR_Debug=dist/Debug/MinGW-Windows/package
-CND_PACKAGE_NAME_Debug=zavodnici.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/MinGW-Windows/package/zavodnici.tar
+CND_PACKAGE_NAME_Debug=zavod.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/MinGW-Windows/package/zavod.tar
 # Release configuration
 CND_PLATFORM_Release=MinGW-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/MinGW-Windows
-CND_ARTIFACT_NAME_Release=zavodnici
-CND_ARTIFACT_PATH_Release=dist/Release/MinGW-Windows/zavodnici
+CND_ARTIFACT_NAME_Release=zavod
+CND_ARTIFACT_PATH_Release=dist/Release/MinGW-Windows/zavod
 CND_PACKAGE_DIR_Release=dist/Release/MinGW-Windows/package
-CND_PACKAGE_NAME_Release=zavodnici.tar
-CND_PACKAGE_PATH_Release=dist/Release/MinGW-Windows/package/zavodnici.tar
+CND_PACKAGE_NAME_Release=zavod.tar
+CND_PACKAGE_PATH_Release=dist/Release/MinGW-Windows/package/zavod.tar
 #
 # include compiler specific variables
 #
